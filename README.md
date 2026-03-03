@@ -11,7 +11,7 @@ com TUI navegavel no terminal.
 - Suporte a MPV, VLC e KMPlayer (incluindo versoes portable)
 - Hardware decoding configuravel por servidor
 - Configuracoes alteraveis dentro da TUI sem sair do programa
-- Config persistente em ~/.config/xtream-mpv/config.json
+- Config persistente em ~/.config/xtreamgo/config.json
 
 ## Requisitos
 
