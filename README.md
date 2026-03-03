@@ -3,19 +3,21 @@
 CLI interativo para assistir listas Xtream Code (IPTV) no MPV, VLC ou KMPlayer,
 com TUI navegavel no terminal.
 
-<img width="952" height="552" alt="image" src="https://github.com/user-attachments/assets/b5b956b5-fa37-48e3-a1d7-2b94c47b1c06" />
-
+<img width="952" height="552" alt="image" src="https://github.com/user-attachments/assets/5a4ccebb-b304-4fcc-84ee-fa4a698b2bd3" />
 
 
 ## Funcionalidades
 
 - TV ao Vivo, Filmes (VOD) e Series com navegacao por categorias
+- Busca global em todos os Filmes ou Series de uma vez (sem escolher categoria)
 - Filtro por nome em qualquer lista (tecla /)
+- Breadcrumb de navegacao sempre visivel
+- Spinner animado durante carregamentos
 - Multiplos servidores Xtream Code com troca rapida
 - Suporte a MPV, VLC e KMPlayer (incluindo versoes portable)
 - Hardware decoding configuravel por servidor
 - Configuracoes alteraveis dentro da TUI sem sair do programa
-- Config persistente em ~/.config/xtreamgo/config.json
+- Config persistente em ~/.config/xtream-mpv/config.json
 
 ## Requisitos
 
@@ -95,22 +97,56 @@ Coloque os arquivos dos players portable ao lado do executavel:
     xtreamgo use 1        ativar servidor pelo indice
     xtreamgo remove 0     remover servidor pelo indice
 
+## Interface
+
+A TUI conta com:
+
+- Header fixo com logo, versao e servidor/player ativo
+- Breadcrumb de navegacao com separador › e item atual em ciano
+- Spinner animado durante carregamentos
+- Item selecionado com borda esquerda roxa e fundo destacado
+- Footer dinamico que muda os atalhos conforme a tela atual
+
 ## Navegacao na TUI
 
     Setas / Enter   Navegar e selecionar
     Esc             Voltar
-    /               Filtrar por nome
+    /               Filtrar por nome na lista atual
     q               Sair
 
 ### Fluxo
 
     Menu principal
-     TV ao Vivo  ->  Categorias  ->  Canais      ->  Player
-     Filmes      ->  Categorias  ->  Filmes       ->  Player
-     Series      ->  Categorias  ->  Series
+     TV ao Vivo  ->  Categorias               ->  Canais      ->  Player
+     Filmes      ->  [Buscar em tudo]          ->  Todos       ->  Player
+                  ->  Categoria                ->  Filmes      ->  Player
+     Series      ->  [Buscar em tudo]          ->  Todas       ->  Player
+                  ->  Categoria  ->  Series
                                   ->  Temporadas
-                                  ->  Episodios   ->  Player
+                                  ->  Episodios ->  Player
      Configuracoes
+
+### Busca global em Filmes e Series
+
+Nas telas de categorias de Filmes e Series, o primeiro item da lista e sempre
+"Buscar em tudo". Ao seleciona-lo, o XtreamGo carrega todos os itens de todas
+as categorias de uma vez e abre a lista com o filtro ativo. Use / para digitar
+e encontrar qualquer titulo independente da categoria.
+
+    Filmes
+     󰍉  Buscar em tudo   <- carrega TODOS os filmes, use / para filtrar
+     ──────────────────
+     Acao
+     Comedia
+     Drama
+     ...
+
+    Series
+     󰍉  Buscar em tudo   <- carrega TODAS as series, use / para filtrar
+     ──────────────────
+     Animacao
+     Drama
+     ...
 
 ## Tela de Configuracoes
 
