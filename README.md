@@ -3,7 +3,8 @@
 CLI interativo para assistir listas Xtream Code (IPTV) no MPV, VLC ou KMPlayer,
 com TUI navegavel no terminal.
 
-<img width="970" height="552" alt="image" src="https://github.com/user-attachments/assets/1360c47f-3af5-4762-ad1d-5caa1eca7b3b" />
+<img width="952" height="552" alt="image" src="https://github.com/user-attachments/assets/b5b956b5-fa37-48e3-a1d7-2b94c47b1c06" />
+
 
 
 ## Funcionalidades
