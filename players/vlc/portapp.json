@@ -1,0 +1,11 @@
+{
+  "id": "vlc-portable",
+  "guid": "{727DA819-F380-43E4-943A-2A418A0D8270}",
+  "name": "VLC Portable",
+  "version": "3.0.21",
+  "release": "12",
+  "date": "2025/04/11 23:39:15",
+  "publisher": "CrazyMax",
+  "url": "https://github.com/portapps/vlc-portable",
+  "portapps_version": "3.16.0"
+}

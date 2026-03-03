@@ -1,0 +1,21 @@
+{
+  "info": {
+    "id": "vlc-portable",
+    "guid": "{727DA819-F380-43E4-943A-2A418A0D8270}",
+    "name": "VLC Portable",
+    "version": "3.0.21",
+    "release": "12",
+    "date": "2025/04/11 23:39:15",
+    "publisher": "CrazyMax",
+    "url": "https://github.com/portapps/vlc-portable",
+    "portapps_version": "3.16.0"
+  },
+  "win_version": {
+    "Major": 10,
+    "Minor": 0,
+    "Build": 19045
+  },
+  "root_path": "C:\\Users\\Hoxley\\Documents\\XtreamGo\\players\\vlc",
+  "app_path": "C:\\Users\\Hoxley\\Documents\\XtreamGo\\players\\vlc\\app",
+  "data_path": "C:\\Users\\Hoxley\\Documents\\XtreamGo\\players\\vlc\\data"
+}

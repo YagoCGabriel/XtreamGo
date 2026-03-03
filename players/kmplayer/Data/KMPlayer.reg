@@ -1,0 +1,815 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\KMPlayer]
+
+[HKEY_CURRENT_USER\Software\KMPlayer\KMP3.0]
+"CaptureFolder"="C:\\Users\\Hoxley\\Documents\\XtreamGo\\players\\kmplayer\\Capture\\"
+
+[HKEY_CURRENT_USER\Software\KMPlayer\KMP3.0\OptionArea]
+"LanguageIniName"="Brazilian Portuguese.ini"
+
+[HKEY_CURRENT_USER\Software\KMPlayer\KMP64]
+
+[HKEY_CURRENT_USER\Software\KMPlayer\KMP64\Settings]
+"SnapshotPath"="C:\\Users\\Hoxley\\Documents\\XtreamGo\\players\\kmplayer\\Capture"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X]
+"kmp64filecheck"="271170d2f694231dda25907363286833"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X]
+"ExePath"="C:\\Users\\Hoxley\\Documents\\XtreamGo\\players\\kmplayer\\App\\KMPlayer64\\KMPlayer64.exe"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Capture]
+"VidDispName"="dummy"
+"AudDispName"="dummy"
+"Country"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Dialogs]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Dialogs\Subresync]
+"WindowPlacement"="78,78,958,678,1,0"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Dialogs\SubtitleDl]
+"ColWidth"="100,300,80,40,50,40,250,"
+"SortColumn"=dword:00000000
+"SortOrder"=dword:00000000
+"WindowPlacement"="78,78,844,442,1,0"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Dialogs\SubtitleUp]
+"ColWidth"="120,75,250,"
+"WindowPlacement"="78,78,844,442,1,0"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\DVBConfiguration]
+"BDANetworkProvider"=""
+"BDATuner"=""
+"BDAReceiver"=""
+"BDAScanFreqStart"=dword:00073b90
+"BDAScanFreqEnd"=dword:000d1790
+"BDABandWidth"=dword:00000008
+"BDAUseOffset"=dword:00000000
+"BDAOffset"=dword:000000a6
+"BDAIgnoreEncryptedChannels"=dword:00000000
+"LastChannel"=dword:ffffffff
+"RebuildFilterGraph"=dword:00000001
+"StopFilterGraph"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Favorites]
+"RememberPosition"=dword:00000001
+"RelativeDrive"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\FileFormats]
+"RtspHandler"=dword:00000001
+"RtspFileExtFirst"=dword:00000001
+"avi"="avi \\0"
+"mpeg"="mpg mpeg mpe m1v m2v mpv2 mp2v pva evo m2p \\0"
+"mpegts"="ts tp trp m2t m2ts mts rec ssif \\0"
+"dvdvideo"="vob ifo \\0"
+"mkv"="mkv mk3d \\0"
+"webm"="webm \\0"
+"mp4"="mp4 m4v mp4v mpv4 hdmov \\0"
+"mov"="mov \\0"
+"3gp"="3gp 3gpp 3ga \\0"
+"3g2"="3g2 3gp2 \\0"
+"flv"="flv f4v \\0"
+"ogm"="ogm ogv \\0"
+"rm"="rm rmvb \\0"
+"rt"="rt ram rpm rmm rp \\0"
+"wmv"="wmv wmp wm asf \\0"
+"bink"="smk bik \\0"
+"flic"="fli flc flic \\0"
+"dsm"="dsm dsv dsa dss \\0"
+"ivf"="ivf \\0"
+"swf"="swf \\3"
+"other"="divx amv \\0"
+"ac3"="ac3 \\0"
+"dts"="dts dtshd dtsma \\0"
+"aiff"="aif aifc aiff \\0"
+"alac"="alac \\0"
+"amr"="amr \\0"
+"ape"="ape apl \\0"
+"au"="au snd \\0"
+"audiocd"="cda \\0"
+"flac"="flac \\0"
+"m4a"="m4a m4b m4r aac \\0"
+"midi"="mid midi rmi \\0"
+"mka"="mka \\0"
+"mp3"="mp3 \\0"
+"mpa"="mpa mp2 m1a m2a \\0"
+"mpc"="mpc \\0"
+"ofr"="ofr ofs \\0"
+"ogg"="ogg oga \\0"
+"opus"="opus \\0"
+"ra"="ra \\0"
+"tak"="tak \\0"
+"tta"="tta \\0"
+"wav"="wav \\0"
+"wma"="wma \\0"
+"wavpack"="wv \\0"
+"other_audio"="aob mlp thd \\0"
+"pls"="asx m3u m3u8 wvx wax wmx kpl \\0"
+"bdpls"="mpls bdmv \\0"
+"rar"="rar \\0"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Filters]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Filters\x64]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Internal Filters]
+"TRA_WMV"=dword:00000001
+"SRC_CDDA"=dword:00000001
+"SRC_CDXA"=dword:00000001
+"SRC_VTS"=dword:00000001
+"SRC_FLIC"=dword:00000001
+"SRC_AC3"=dword:00000001
+"SRC_DTS"=dword:00000001
+"SRC_MATROSKA"=dword:00000001
+"SRC_HTTP"=dword:00000001
+"SRC_RTSP"=dword:00000001
+"SRC_UDP"=dword:00000001
+"SRC_RTP"=dword:00000001
+"SRC_MMS"=dword:00000001
+"SRC_RTMP"=dword:00000001
+"SRC_REALMEDIA"=dword:00000001
+"SRC_AVI"=dword:00000001
+"SRC_AVS"=dword:00000001
+"SRC_OGG"=dword:00000001
+"SRC_MPEG"=dword:00000001
+"SRC_MPA"=dword:00000001
+"SRC_DSM"=dword:00000001
+"SRC_SUBS"=dword:00000001
+"SRC_MP4"=dword:00000001
+"SRC_FLV"=dword:00000001
+"SRC_GIF"=dword:00000001
+"SRC_ASF"=dword:00000001
+"SRC_WTV"=dword:00000001
+"SRC_FLAC"=dword:00000001
+"SRC_RFS"=dword:00000001
+"SRC_FTP"=dword:00000001
+"TRA_MPEG1"=dword:00000001
+"TRA_MPEG2"=dword:00000001
+"TRA_RV"=dword:00000001
+"TRA_RA"=dword:00000001
+"TRA_MPA"=dword:00000001
+"TRA_DTS"=dword:00000001
+"TRA_LPCM"=dword:00000001
+"TRA_AC3"=dword:00000001
+"TRA_AAC"=dword:00000001
+"TRA_ALAC"=dword:00000001
+"TRA_ALS"=dword:00000001
+"TRA_PS2AUD"=dword:00000001
+"TRA_VORBIS"=dword:00000001
+"TRA_FLAC"=dword:00000001
+"TRA_NELLY"=dword:00000001
+"TRA_AMR"=dword:00000001
+"TRA_OPUS"=dword:00000001
+"TRA_PCM"=dword:00000001
+"TRA_H264"=dword:00000001
+"TRA_HEVC"=dword:00000001
+"TRA_VC1"=dword:00000001
+"TRA_FLV4"=dword:00000001
+"TRA_VP356"=dword:00000001
+"TRA_VP8"=dword:00000001
+"TRA_VP9"=dword:00000001
+"TRA_XVID"=dword:00000001
+"TRA_DIVX"=dword:00000001
+"TRA_MSMPEG4"=dword:00000001
+"TRA_SVQ3"=dword:00000001
+"TRA_H263"=dword:00000001
+"TRA_THEORA"=dword:00000001
+"TRA_AMVV"=dword:00000001
+"TRA_MJPEG"=dword:00000001
+"TRA_INDEO"=dword:00000001
+"TRA_SCREEN"=dword:00000001
+"TRA_FLIC"=dword:00000001
+"TRA_MSVIDEO"=dword:00000001
+"TRA_V210_V410"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Internal Filters\Audio Renderer]
+"DeviceId"=""
+"DeviceExclusive"=dword:00000000
+"DeviceBufferDuration"=dword:000000c8
+"AllowBitstreaming"=dword:00000001
+"CrossfeedEnabled"=dword:00000000
+"CrossfeedCutoffFrequency"=dword:000002bc
+"CrossfeedLevel"=dword:0000003c
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Internal Filters\LAVAudio]
+"Mixing"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Internal Filters\LAVSplitter]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Internal Filters\LAVVideo]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Internal Filters\LAVVideo\HWAccel]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Internal Filters\LAVVideo\OutputFormat]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Recent File List]
+"File1"="http://superlime.net:80/live/XzF7DGUyy/eT3YAA2EZ/96.ts"
+"File2"="http://superlime.net:80/series/XzF7DGUyy/eT3YAA2EZ/2293537.mp4"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Recent Play List]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Settings]
+"AudioBoost"=dword:0000004b
+"DisableSubtitleAnimation"=dword:00000000
+"SubtitleRenderer"=dword:00000000
+"SettingsVersion"=dword:00000008
+"HideCaptionMenu"=dword:00000002
+"HideNavigation"=dword:00000000
+"ControlState"=dword:0000000b
+"DefaultVideoFrame"=dword:00000004
+"KeepAspectRatio"=dword:00000001
+"CompMonDeskARDiff"=dword:00000000
+"Volume"=dword:00000022
+"Balance"=dword:00000000
+"VolumeStep"=dword:00000005
+"SpeedStep"=dword:00000019
+"Mute"=dword:00000000
+"LoopNum"=dword:00000001
+"Loop"=dword:00000000
+"LoopMode"=dword:00000001
+"Zoom"=dword:00000001
+"AllowMultipleInstances"=dword:00000000
+"TitleBarTextStyle"=dword:00000001
+"TitleBarTextTitle"=dword:00000001
+"OnTop"=dword:00000000
+"TrayIcon"=dword:00000000
+"AutoZoom"=dword:00000000
+"AutoFitFactor"=dword:0000004b
+"AfterPlayback"=dword:00000000
+"HideFullscreenControls"=dword:00000001
+"HideFullscreenControlsPolicy"=dword:00000001
+"HideFullscreenControlsDelay"=dword:00000000
+"HideFullscreenDockedPanels"=dword:00000001
+"HideWindowedControls"=dword:00000000
+"HideWindowedMousePointer"=dword:00000001
+"ExitFullscreenAtTheEnd"=dword:00000000
+"RememberWindowPos"=dword:00000001
+"RememberWindowSize"=dword:00000001
+"LastWindowRect"=hex:00,00,00,00,00,00,00,00,50,05,00,00,e2,02,00,00
+"LastPlayListRect"=hex:00,00,00,00,00,00,00,00,2c,01,00,00,f4,01,00,00
+"LastWindowType"=dword:00000000
+"LastPlayListVisible"=dword:00000000
+"SnapToDesktopEdges"=dword:00000001
+"AspectRatioX"=dword:00000000
+"AspectRatioY"=dword:00000000
+"KeepHistory"=dword:00000001
+"RecentFilesNumber"=dword:00000014
+"DSVidRen"=dword:0000000b
+"RMVidRen"=dword:00000000
+"QTVidRen"=dword:00000000
+"ShufflePlaylistItems"=dword:00000000
+"RememberPlaylistItems"=dword:00000001
+"HidePlaylistFullScreen"=dword:00000000
+"APSurfaceUsage"=dword:00000002
+"DX9Resizer"=dword:00000001
+"VMR9MixerMode"=dword:00000001
+"VMRMixerYUV"=dword:00000000
+"VMRAlternateVSync"=dword:00000000
+"VMRVSyncOffset"=dword:00000000
+"VMRVSyncAccurate2"=dword:00000000
+"VMRFullscreenGUISupport"=dword:00000000
+"VMRVSync"=dword:00000000
+"VMRDisableDesktopComposition"=dword:00000000
+"VMRFullFloatingPointProcessing"=dword:00000000
+"VMRHalfFloatingPointProcessing"=dword:00000000
+"VMRColorManagementEnable"=dword:00000000
+"VMRColorManagementInput"=dword:00000000
+"VMRColorManagementAmbientLight"=dword:00000000
+"VMRColorManagementIntent"=dword:00000000
+"EVROutputRange"=dword:00000000
+"EVRHighColorRes"=dword:00000000
+"EVRForceInputHighColorRes"=dword:00000000
+"EVREnableFrameTimeCorrection"=dword:00000000
+"VMRFlushGPUBeforeVSync"=dword:00000001
+"VMRFlushGPUAfterPresent"=dword:00000001
+"VMRFlushGPUWait"=dword:00000000
+"SynchronizeClock"=dword:00000000
+"SynchronizeDisplay"=dword:00000000
+"SynchronizeNearest"=dword:00000001
+"LineDelta"=dword:00000000
+"ColumnDelta"=dword:00000000
+"CycleDelta"=hex:61,32,55,30,2a,a9,53,3f
+"TargetSyncOffset"=hex:00,00,00,00,00,00,28,40
+"ControlLimit"=hex:00,00,00,00,00,00,00,40
+"CacheShaders"=dword:00000000
+"ResetDevice"=dword:00000000
+"SPCSize"=dword:0000000a
+"SPCMaxRes"=dword:00000009
+"RenderAtWhenSubtitleAnimationIsDisabled"=dword:00000032
+"SubtitleAnimationRate"=dword:00000064
+"AllowDroppingSubpic"=dword:00000001
+"EVRBuffers"=dword:00000005
+"D3D9RenderDevice"=""
+"AutoAudioSet"=dword:00000001
+"AudioRendererType"="Internal Audio Renderer"
+"AutoloadAudio"=dword:00000001
+"SubtitlesLanguageOrder"=""
+"AudiosLanguageOrder"=""
+"DisableVSFilter"=dword:00000001
+"EnableWorkerThreadForOpening"=dword:00000001
+"ReportFailedPins"=dword:00000001
+"DVDPath"=""
+"UseDVDPath"=dword:00000000
+"MenuLang"=dword:00000000
+"AudioLang"=dword:00000000
+"SubtitlesLang"=dword:00000000
+"ClosedCaptions"=dword:00000000
+"SPDefaultStyle"="20;20;20;20;2;0;2.000000;2.000000;3.000000;3.000000;0xffffff;0x00ffff;0x000000;0x000000;0x00;0x00;0x00;0x80;1;Arial;20.000000;100.000000;100.000000;0.000000;700;0;0;0;0;0.000000;0.000000;0.000000;0.000000;1"
+"SPOverridePlacement"=dword:00000000
+"SPHorPos"=dword:00000032
+"SPVerPos"=dword:0000005a
+"SubtitleARCompensation"=dword:00000001
+"SubDelayInterval"=dword:00000064
+"EnableSubtitles"=dword:00000001
+"PreferForcedDefaultSubtitles"=dword:00000001
+"PrioritizeExternalSubtitles"=dword:00000001
+"DisableInternalSubtitles"=dword:00000000
+"AllowOverridingExternalSplitterSubtitleChoice"=dword:00000000
+"AutoDownloadSubtitles"=dword:00000000
+"AutoDownloadScoreMovies"=dword:00000016
+"AutoDownloadScoreSeries"=dword:00000018
+"AutoDownloadSubtitlesExclude"=""
+"AutoUploadSubtitles"=dword:00000000
+"PreferHearingImpairedSubtitles"=dword:00000000
+"SubtitlesProviders"="<|podnapisi|||1|1|>"
+"SubtitlePaths"=".;.\\subtitles;.\\subs"
+"UseDefaultsubtitlesStyle"=dword:00000001
+"AudioProcessorEnable"=dword:00000000
+"EqEnable"=dword:00000000
+"EqBands"=hex:3c,00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,aa,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,f0,3f,36,01,00,00,00,00,00,00,00,00,00,00,00,00,\
+  f0,3f,58,02,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,e8,03,00,00,00,00,00,\
+  00,00,00,00,00,00,00,f0,3f,b8,0b,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,\
+  70,17,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,e0,2e,00,00,00,00,00,00,00,\
+  00,00,00,00,00,f0,3f,b0,36,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,80,3e,\
+  00,00,00,00,00,00,00,00,00,00,00,00,f0,3f
+"EnableAudioSwitcher"=dword:00000001
+"EnableAudioTimeShift"=dword:00000000
+"AudioTimeShift"=dword:00000000
+"DownSampleTo441"=dword:00000000
+"CustomChannelMapping"=dword:00000000
+"SpeakerToChannelMapping"=hex:01,00,00,00,01,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,01,00,00,00,02,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  01,00,00,00,02,00,00,00,00,00,00,00,00,00,00,00,04,00,00,00,08,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,\
+  00,02,00,00,00,04,00,00,00,00,00,00,00,08,00,00,00,10,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,02,00,\
+  00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,04,\
+  00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,\
+  08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,00,80,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,\
+  00,10,00,00,00,20,00,00,00,40,00,00,00,80,00,00,00,00,01,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,00,10,00,\
+  00,00,20,00,00,00,40,00,00,00,80,00,00,00,00,01,00,00,00,02,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,\
+  00,00,00,40,00,00,00,80,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,\
+  40,00,00,00,80,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,\
+  00,00,02,00,00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,\
+  00,80,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,00,10,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,02,\
+  00,00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,00,80,00,\
+  00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,\
+  04,00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,00,80,00,00,00,00,\
+  01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,40,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,\
+  00,08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,00,80,00,00,00,00,01,00,00,\
+  00,02,00,00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,00,\
+  80,00,00,00,00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,\
+  00,00,10,00,00,00,20,00,00,00,40,00,00,00,80,00,00,00,00,01,00,00,00,02,00,\
+  00,00,04,00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,00,80,00,00,\
+  00,00,01,00,00,00,00,00,01,00,00,00,02,00,00,00,04,00,00,00,08,00,00,00,10,\
+  00,00,00,20,00,00,00,40,00,00,00,80,00,00,00,00,01,00,00,00,02,00,00,00,04,\
+  00,00,00,08,00,00,00,10,00,00,00,20,00,00,00,40,00,00,00,80,00,00,00,00,01,\
+  00,00,00,02,00
+"AudioNormalize"=dword:00000001
+"AudioMaxNormFactor"=dword:00000190
+"AudioNormalizeRecover"=dword:00000001
+"SpeakerChannels"=dword:00000002
+"FullScreenMonitor"=""
+"PreventMinimize"=dword:00000000
+"UseWin7TaskBar"=dword:00000001
+"UseSearchInFolder"=dword:00000001
+"UseTimeTooltip"=dword:00000001
+"TimeTooltipPosition"=dword:00000000
+"OSDSize"=dword:0000001e
+"OSDFont"="Segoe UI"
+"AssociatedWithIcon"=dword:00000001
+"LastOpenDir"="C:\\"
+"D3DFullScreen"=dword:00000000
+"VideoBrightness"=dword:00000000
+"VideoContrast"=dword:00000000
+"VideoHue"=dword:00000000
+"VideoSaturation"=dword:00000000
+"ShowOSD"=dword:00000001
+"EnableEDLEditor"=dword:00000000
+"InterfaceLanguage"=dword:00000416
+"FastSeek"=dword:00000001
+"FastSeekMethod"=dword:00000001
+"ShowChapters"=dword:00000001
+"LcdSupport"=dword:00000000
+"DefaultCapture"=dword:00000000
+"FileOpenWithSimilar"=dword:00000001
+"RememberDVDPos"=dword:00000000
+"RememberFilePos"=dword:00000000
+"RememberPosForLongerThan"=dword:00000000
+"RememberPosForAudioFiles"=dword:00000001
+"LastFullScreen"=dword:00000000
+"IntRealMedia"=dword:00000000
+"UseWinLirc"=dword:00000000
+"WinLircAddr"="127.0.0.1:8765"
+"UseUICE"=dword:00000000
+"UICEAddr"="127.0.0.1:1234"
+"UseGlobalMedia"=dword:00000001
+"JumpDistS"=dword:00001388
+"JumpDistM"=dword:00007530
+"JumpDistL"=dword:0000ea60
+"JumpDist10M"=dword:000927c0
+"LimitWindowProportions"=dword:00000000
+"LastUsedPage"=dword:00000000
+"LogoFile"=""
+"LogoID2"=dword:00004e74
+"LogoExt"=dword:00000000
+"HideCDROMsSubMenu"=dword:00000000
+"Priority"=dword:00000020
+"LaunchFullScreen"=dword:00000000
+"EnableWebServer"=dword:00000000
+"WebServerPort"=dword:0000350b
+"WebServerUseCompression"=dword:00000001
+"WebServerLocalhostOnly"=dword:00000000
+"WebUIEnablePreview"=dword:00000000
+"WebServerPrintDebugIfo"=dword:00000000
+"WebRoot"="*./webroot"
+"WebDefIndex"="index.html;index.php"
+"WebServerCGI"=""
+"SnapshotPath"="C:\\Users\\Hoxley\\AppData\\Roaming\\KMP\\Capture"
+"SnapshotExt"=".jpg"
+"SnapShotSubtitles"=dword:00000000
+"ThumbRows"=dword:00000004
+"ThumbCols"=dword:00000004
+"ThumbWidth"=dword:00000400
+"ADCaptureFilenamePrefix"=""
+"ADCaptureImgFormat"=dword:00000001
+"ADCaptureQuality"=dword:00000064
+"ADCaptureImgOrgSizeType"=dword:00000001
+"ADCaptureCustomWidth"=dword:00000400
+"ADCaptureCustomHeight"=dword:000002d0
+"ADCaptureNumbers"=dword:0000000a
+"ADCaptureEveryMs"=dword:00000001
+"ADCaptureFramesMs"=dword:000003e8
+"ADCaptureFramesFrame"=dword:00000018
+"ADAspectRatio"=dword:00000001
+"ADIncSubtitles"=dword:00000000
+"SubSaveExternalStyleFile"=dword:00000000
+"RemainingTime"=dword:00000000
+"HighPrecisionTimer"=dword:00000000
+"UpdaterAutoCheck"=dword:ffffffff
+"UpdaterDelay"=dword:00000007
+"NotifySkype"=dword:00000000
+"JpegQuality"=dword:0000005a
+"EnableCoverArt"=dword:00000001
+"CoverArtSizeLimit"=dword:00000258
+"EnableLogging"=dword:00000000
+"UseLegacyToolbar"=dword:00000000
+"DefaultToolbarSize"=dword:00000018
+"TransparencyPlaylist"=dword:00000064
+"DockingType"=dword:00000000
+"YoutubePageParser"=dword:00000001
+"YoutubeFormat"="MP4"
+"YoutubeResolution"=dword:000002d0
+"Youtube60fps"=dword:00000000
+"YoutubeHDR"=dword:00000000
+"YoutubeLoadPlaylist"=dword:00000000
+"YDLMaxHeight"=dword:000002d0
+"YDLMaximumQuality"=dword:00000000
+"3DTexture"=dword:00000000
+"3DFrameSwap"=dword:00000000
+"3DFX"=dword:00000000
+"EnablePreShader"=dword:00000000
+"EnablePostShader"=dword:00000000
+"AutoHideMode"=dword:00000000
+"UseDarkTheme"=dword:00000001
+"ThemeBrightness"=dword:0000000f
+"ThemeRed"=dword:00000100
+"ThemeGreen"=dword:00000100
+"ThemeBlue"=dword:00000100
+"DarkMenu"=dword:00000001
+"clrFace(ABGR)"=dword:00ffffff
+"VRMode"=dword:00000000
+"IsSmartSeek"=dword:00000000
+"SmartSeekSize"=dword:0000000a
+"HideViewWindowBtns"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Settings\btns]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Settings\btns\event]
+"imgpath"=""
+"urlkr"=""
+"urlen"=""
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Settings\EqPresets]
+"Preset0"=hex:28,00,44,00,65,00,66,00,61,00,75,00,6c,00,74,00,29,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,aa,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,36,01,00,00,00,00,00,00,00,00,\
+  00,00,00,00,f0,3f,58,02,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,e8,03,00,\
+  00,00,00,00,00,00,00,00,00,00,00,f0,3f,b8,0b,00,00,00,00,00,00,00,00,00,00,\
+  00,00,f0,3f,70,17,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,e0,2e,00,00,00,\
+  00,00,00,00,00,00,00,00,00,f0,3f,b0,36,00,00,00,00,00,00,00,00,00,00,00,00,\
+  f0,3f,80,3e,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f
+"Preset1"=hex:43,00,6c,00,61,00,73,00,73,00,69,00,63,00,61,00,6c,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,aa,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,36,01,00,00,00,00,00,00,00,00,\
+  00,00,00,00,f0,3f,58,02,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,e8,03,00,\
+  00,00,00,00,00,00,00,00,00,00,00,f0,3f,b8,0b,00,00,00,00,00,00,36,c4,6b,9f,\
+  c9,f3,f1,3f,70,17,00,00,00,00,00,00,78,d4,f6,74,cd,30,e4,3f,e0,2e,00,00,00,\
+  00,00,00,78,d4,f6,74,cd,30,e4,3f,b0,36,00,00,00,00,00,00,78,d4,f6,74,cd,30,\
+  e4,3f,80,3e,00,00,00,00,00,00,1e,38,1c,3c,b3,fe,e1,3f
+"Preset2"=hex:43,00,6c,00,75,00,62,00,00,00,69,00,63,00,61,00,6c,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,aa,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,36,01,00,00,00,00,00,00,36,c4,\
+  6b,9f,c9,f3,f1,3f,58,02,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,e8,03,00,\
+  00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,b8,0b,00,00,00,00,00,00,04,26,fc,f8,\
+  8e,24,f4,3f,70,17,00,00,00,00,00,00,36,c4,6b,9f,c9,f3,f1,3f,e0,2e,00,00,00,\
+  00,00,00,00,00,00,00,00,00,f0,3f,b0,36,00,00,00,00,00,00,00,00,00,00,00,00,\
+  f0,3f,80,3e,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f
+"Preset3"=hex:44,00,61,00,6e,00,63,00,65,00,00,00,63,00,61,00,6c,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,0e,47,54,1c,d5,73,fc,3f,aa,\
+  00,00,00,00,00,00,00,53,60,d4,f6,b8,5b,f9,3f,36,01,00,00,00,00,00,00,04,26,\
+  fc,f8,8e,24,f4,3f,58,02,00,00,00,00,00,00,4b,0a,fa,af,20,85,ec,3f,e8,03,00,\
+  00,00,00,00,00,00,00,00,00,00,00,f0,3f,b8,0b,00,00,00,00,00,00,34,c4,cd,0b,\
+  23,6b,e9,3f,70,17,00,00,00,00,00,00,8a,ab,e8,ea,7d,a7,e6,3f,e0,2e,00,00,00,\
+  00,00,00,34,c4,cd,0b,23,6b,e9,3f,b0,36,00,00,00,00,00,00,00,00,00,00,00,00,\
+  f0,3f,80,3e,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f
+"Preset4"=hex:46,00,75,00,6c,00,6c,00,20,00,42,00,61,00,73,00,73,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,0e,47,54,1c,d5,73,fc,3f,aa,\
+  00,00,00,00,00,00,00,0e,47,54,1c,d5,73,fc,3f,36,01,00,00,00,00,00,00,0e,47,\
+  54,1c,d5,73,fc,3f,58,02,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,e8,03,00,\
+  00,00,00,00,00,36,c4,6b,9f,c9,f3,f1,3f,b8,0b,00,00,00,00,00,00,4b,0a,fa,af,\
+  20,85,ec,3f,70,17,00,00,00,00,00,00,8a,ab,e8,ea,7d,a7,e6,3f,e0,2e,00,00,00,\
+  00,00,00,1e,38,1c,3c,b3,fe,e1,3f,b0,36,00,00,00,00,00,00,1e,38,1c,3c,b3,fe,\
+  e1,3f,80,3e,00,00,00,00,00,00,1e,38,1c,3c,b3,fe,e1,3f
+"Preset5"=hex:46,00,75,00,6c,00,6c,00,20,00,42,00,61,00,73,00,73,00,20,00,26,\
+  00,20,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,aa,\
+  00,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,36,01,00,00,00,00,00,00,00,00,\
+  00,00,00,00,f0,3f,58,02,00,00,00,00,00,00,8a,ab,e8,ea,7d,a7,e6,3f,e8,03,00,\
+  00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,b8,0b,00,00,00,00,00,00,4b,0a,fa,af,\
+  20,85,ec,3f,70,17,00,00,00,00,00,00,53,60,d4,f6,b8,5b,f9,3f,e0,2e,00,00,00,\
+  00,00,00,0e,47,54,1c,d5,73,fc,3f,b0,36,00,00,00,00,00,00,0e,47,54,1c,d5,73,\
+  fc,3f,80,3e,00,00,00,00,00,00,0e,47,54,1c,d5,73,fc,3f
+"Preset6"=hex:46,00,75,00,6c,00,6c,00,20,00,54,00,72,00,65,00,62,00,6c,00,65,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,1e,38,1c,3c,b3,fe,e1,3f,aa,\
+  00,00,00,00,00,00,00,1e,38,1c,3c,b3,fe,e1,3f,36,01,00,00,00,00,00,00,1e,38,\
+  1c,3c,b3,fe,e1,3f,58,02,00,00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,e8,03,00,\
+  00,00,00,00,00,4b,0a,fa,af,20,85,ec,3f,b8,0b,00,00,00,00,00,00,0e,47,54,1c,\
+  d5,73,fc,3f,70,17,00,00,00,00,00,00,5f,cc,d4,e9,57,18,04,40,e0,2e,00,00,00,\
+  00,00,00,5f,cc,d4,e9,57,18,04,40,b0,36,00,00,00,00,00,00,5f,cc,d4,e9,57,18,\
+  04,40,80,3e,00,00,00,00,00,00,64,15,ab,59,0c,8c,06,40
+"Preset7"=hex:4c,00,61,00,70,00,74,00,6f,00,70,00,00,00,65,00,62,00,6c,00,65,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,aa,\
+  00,00,00,00,00,00,00,0e,47,54,1c,d5,73,fc,3f,36,01,00,00,00,00,00,00,10,6e,\
+  e8,f7,c0,99,f6,3f,58,02,00,00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,e8,03,00,\
+  00,00,00,00,00,4b,0a,fa,af,20,85,ec,3f,b8,0b,00,00,00,00,00,00,36,c4,6b,9f,\
+  c9,f3,f1,3f,70,17,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,e0,2e,00,00,00,\
+  00,00,00,10,6e,e8,f7,c0,99,f6,3f,b0,36,00,00,00,00,00,00,0e,47,54,1c,d5,73,\
+  fc,3f,80,3e,00,00,00,00,00,00,af,b8,5b,2d,98,ec,ff,3f
+"Preset8"=hex:4c,00,61,00,72,00,67,00,65,00,20,00,48,00,61,00,6c,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,0e,47,54,1c,d5,73,fc,3f,aa,\
+  00,00,00,00,00,00,00,0e,47,54,1c,d5,73,fc,3f,36,01,00,00,00,00,00,00,10,6e,\
+  e8,f7,c0,99,f6,3f,58,02,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,e8,03,00,\
+  00,00,00,00,00,00,00,00,00,00,00,f0,3f,b8,0b,00,00,00,00,00,00,34,c4,cd,0b,\
+  23,6b,e9,3f,70,17,00,00,00,00,00,00,8a,ab,e8,ea,7d,a7,e6,3f,e0,2e,00,00,00,\
+  00,00,00,8a,ab,e8,ea,7d,a7,e6,3f,b0,36,00,00,00,00,00,00,00,00,00,00,00,00,\
+  f0,3f,80,3e,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f
+"Preset9"=hex:4c,00,69,00,76,00,65,00,00,00,20,00,48,00,61,00,6c,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,8a,ab,e8,ea,7d,a7,e6,3f,aa,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,36,01,00,00,00,00,00,00,36,c4,\
+  6b,9f,c9,f3,f1,3f,58,02,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,e8,03,00,\
+  00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,b8,0b,00,00,00,00,00,00,04,26,fc,f8,\
+  8e,24,f4,3f,70,17,00,00,00,00,00,00,36,c4,6b,9f,c9,f3,f1,3f,e0,2e,00,00,00,\
+  00,00,00,36,c4,6b,9f,c9,f3,f1,3f,b0,36,00,00,00,00,00,00,36,c4,6b,9f,c9,f3,\
+  f1,3f,80,3e,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f
+"Preset10"=hex:4c,00,6f,00,75,00,64,00,6e,00,65,00,73,00,73,00,00,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,64,15,ab,59,0c,8c,06,40,aa,\
+  00,00,00,00,00,00,00,85,1e,d8,a0,e6,e8,01,40,36,01,00,00,00,00,00,00,0e,47,\
+  54,1c,d5,73,fc,3f,58,02,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,e8,03,00,\
+  00,00,00,00,00,00,00,00,00,00,00,f0,3f,b8,0b,00,00,00,00,00,00,36,c4,6b,9f,\
+  c9,f3,f1,3f,70,17,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,e0,2e,00,00,00,\
+  00,00,00,0e,47,54,1c,d5,73,fc,3f,b0,36,00,00,00,00,00,00,85,1e,d8,a0,e6,e8,\
+  01,40,80,3e,00,00,00,00,00,00,64,15,ab,59,0c,8c,06,40
+"Preset11"=hex:50,00,61,00,72,00,74,00,79,00,00,00,73,00,73,00,00,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,aa,\
+  00,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,36,01,00,00,00,00,00,00,00,00,\
+  00,00,00,00,f0,3f,58,02,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,e8,03,00,\
+  00,00,00,00,00,00,00,00,00,00,00,f0,3f,b8,0b,00,00,00,00,00,00,00,00,00,00,\
+  00,00,f0,3f,70,17,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,e0,2e,00,00,00,\
+  00,00,00,00,00,00,00,00,00,f0,3f,b0,36,00,00,00,00,00,00,10,6e,e8,f7,c0,99,\
+  f6,3f,80,3e,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f
+"Preset12"=hex:50,00,6f,00,70,00,00,00,79,00,00,00,73,00,73,00,00,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,4b,0a,fa,af,20,85,ec,3f,aa,\
+  00,00,00,00,00,00,00,36,c4,6b,9f,c9,f3,f1,3f,36,01,00,00,00,00,00,00,10,6e,\
+  e8,f7,c0,99,f6,3f,58,02,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,e8,03,00,\
+  00,00,00,00,00,36,c4,6b,9f,c9,f3,f1,3f,b8,0b,00,00,00,00,00,00,4b,0a,fa,af,\
+  20,85,ec,3f,70,17,00,00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,e0,2e,00,00,00,\
+  00,00,00,34,c4,cd,0b,23,6b,e9,3f,b0,36,00,00,00,00,00,00,4b,0a,fa,af,20,85,\
+  ec,3f,80,3e,00,00,00,00,00,00,4b,0a,fa,af,20,85,ec,3f
+"Preset13"=hex:52,00,65,00,67,00,67,00,61,00,65,00,00,00,73,00,00,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,aa,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,36,01,00,00,00,00,00,00,4b,0a,\
+  fa,af,20,85,ec,3f,58,02,00,00,00,00,00,00,8a,ab,e8,ea,7d,a7,e6,3f,e8,03,00,\
+  00,00,00,00,00,00,00,00,00,00,00,f0,3f,b8,0b,00,00,00,00,00,00,10,6e,e8,f7,\
+  c0,99,f6,3f,70,17,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,e0,2e,00,00,00,\
+  00,00,00,00,00,00,00,00,00,f0,3f,b0,36,00,00,00,00,00,00,00,00,00,00,00,00,\
+  f0,3f,80,3e,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f
+"Preset14"=hex:52,00,6f,00,63,00,6b,00,00,00,65,00,00,00,73,00,00,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,53,60,d4,f6,b8,5b,f9,3f,aa,\
+  00,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,36,01,00,00,00,00,00,00,8a,ab,\
+  e8,ea,7d,a7,e6,3f,58,02,00,00,00,00,00,00,78,d4,f6,74,cd,30,e4,3f,e8,03,00,\
+  00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,b8,0b,00,00,00,00,00,00,04,26,fc,f8,\
+  8e,24,f4,3f,70,17,00,00,00,00,00,00,53,60,d4,f6,b8,5b,f9,3f,e0,2e,00,00,00,\
+  00,00,00,53,60,d4,f6,b8,5b,f9,3f,b0,36,00,00,00,00,00,00,53,60,d4,f6,b8,5b,\
+  f9,3f,80,3e,00,00,00,00,00,00,53,60,d4,f6,b8,5b,f9,3f
+"Preset15"=hex:53,00,6b,00,61,00,00,00,00,00,65,00,00,00,73,00,00,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,4b,0a,fa,af,20,85,ec,3f,aa,\
+  00,00,00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,36,01,00,00,00,00,00,00,4b,0a,\
+  fa,af,20,85,ec,3f,58,02,00,00,00,00,00,00,00,00,00,00,00,00,f0,3f,e8,03,00,\
+  00,00,00,00,00,36,c4,6b,9f,c9,f3,f1,3f,b8,0b,00,00,00,00,00,00,04,26,fc,f8,\
+  8e,24,f4,3f,70,17,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,e0,2e,00,00,00,\
+  00,00,00,53,60,d4,f6,b8,5b,f9,3f,b0,36,00,00,00,00,00,00,10,6e,e8,f7,c0,99,\
+  f6,3f,80,3e,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f
+"Preset16"=hex:53,00,6f,00,66,00,74,00,00,00,65,00,00,00,73,00,00,00,6c,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,aa,\
+  00,00,00,00,00,00,00,36,c4,6b,9f,c9,f3,f1,3f,36,01,00,00,00,00,00,00,4b,0a,\
+  fa,af,20,85,ec,3f,58,02,00,00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,e8,03,00,\
+  00,00,00,00,00,4b,0a,fa,af,20,85,ec,3f,b8,0b,00,00,00,00,00,00,04,26,fc,f8,\
+  8e,24,f4,3f,70,17,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,e0,2e,00,00,00,\
+  00,00,00,53,60,d4,f6,b8,5b,f9,3f,b0,36,00,00,00,00,00,00,0e,47,54,1c,d5,73,\
+  fc,3f,80,3e,00,00,00,00,00,00,0e,47,54,1c,d5,73,fc,3f
+"Preset17"=hex:53,00,6f,00,66,00,74,00,20,00,52,00,6f,00,63,00,6b,00,00,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,aa,\
+  00,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,36,01,00,00,00,00,00,00,36,c4,\
+  6b,9f,c9,f3,f1,3f,58,02,00,00,00,00,00,00,4b,0a,fa,af,20,85,ec,3f,e8,03,00,\
+  00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,b8,0b,00,00,00,00,00,00,8a,ab,e8,ea,\
+  7d,a7,e6,3f,70,17,00,00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,e0,2e,00,00,00,\
+  00,00,00,4b,0a,fa,af,20,85,ec,3f,b0,36,00,00,00,00,00,00,36,c4,6b,9f,c9,f3,\
+  f1,3f,80,3e,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f
+"Preset18"=hex:54,00,65,00,63,00,68,00,6e,00,6f,00,00,00,63,00,6b,00,00,00,00,\
+  00,00,00,54,00,72,00,65,00,62,00,6c,00,65,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  00,00,00,00,00,00,00,00,3c,00,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,aa,\
+  00,00,00,00,00,00,00,10,6e,e8,f7,c0,99,f6,3f,36,01,00,00,00,00,00,00,00,00,\
+  00,00,00,00,f0,3f,58,02,00,00,00,00,00,00,8a,ab,e8,ea,7d,a7,e6,3f,e8,03,00,\
+  00,00,00,00,00,34,c4,cd,0b,23,6b,e9,3f,b8,0b,00,00,00,00,00,00,00,00,00,00,\
+  00,00,f0,3f,70,17,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f,e0,2e,00,00,00,\
+  00,00,00,10,6e,e8,f7,c0,99,f6,3f,b0,36,00,00,00,00,00,00,10,6e,e8,f7,c0,99,\
+  f6,3f,80,3e,00,00,00,00,00,00,04,26,fc,f8,8e,24,f4,3f
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Settings\FullscreenAutoChangeMode]
+"Enable"=dword:00000000
+"ApplyDefaultModeAtFSExit"=dword:00000001
+"RestoreResAfterExit"=dword:00000001
+"Delay"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Settings\FullscreenAutoChangeMode\Mode0]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Settings\PnSPresets]
+"Preset0"="Escalar para 16:9 TV,0.500,0.500,1.000,1.333"
+"Preset1"="Zoom para Widescreen,0.500,0.500,1.333,1.333"
+"Preset2"="Zoom para Ultra-Widescreen,0.500,0.500,1.763,1.763"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\Shaders]
+"Extra"=""
+"PreResize"=""
+"PostResize"=""
+"LastPreset"=""
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\SubTitleFormats]
+"ass"="ass \\0"
+"idx"="idx \\0"
+"lrc"="lrc \\0"
+"mks"="mks \\0"
+"psb"="psb \\0"
+"rt"="rt \\0"
+"s2k"="s2k \\0"
+"smi"="smi \\0"
+"smil"="smil \\0"
+"srt"="srt \\0"
+"ssa"="ssa \\0"
+"ssf"="ssf \\0"
+"sub"="sub \\0"
+"txt"="txt \\0"
+"usf"="usf \\0"
+"sup"="sup \\0"
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\ToolBars]
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\ToolBars\Capture Settings]
+"DockState"=dword:0000e81c
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\ToolBars\Capture Settings\State-SCBar-825]
+"sizeHorzCX"=dword:000000c6
+"sizeHorzCY"=dword:000001dc
+"sizeVertCX"=dword:000000c6
+"sizeVertCY"=dword:000001dc
+"sizeFloatCX"=dword:000000c6
+"sizeFloatCY"=dword:000001dc
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\ToolBars\Edit List Editor]
+"DockState"=dword:0000e81d
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\ToolBars\Edit List Editor\State-SCBar-846]
+"sizeHorzCX"=dword:000000c8
+"sizeHorzCY"=dword:00000064
+"sizeVertCX"=dword:000000c8
+"sizeVertCY"=dword:00000064
+"sizeFloatCX"=dword:000000c8
+"sizeFloatCY"=dword:00000064
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\ToolBars\Navigation Bar]
+"DockState"=dword:0000e81c
+
+[HKEY_CURRENT_USER\Software\KMPlayer 64X\KMPlayer 64X\ToolBars\Navigation Bar\State-SCBar-33415]
+"sizeHorzCX"=dword:0000008c
+"sizeHorzCY"=dword:00000062
+"sizeVertCX"=dword:0000008c
+"sizeVertCY"=dword:00000062
+"sizeFloatCX"=dword:0000008c
+"sizeFloatCY"=dword:00000062
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\KMPlayer 64X]
+"kmp64filecheck"="271170d2f694231dda25907363286833"

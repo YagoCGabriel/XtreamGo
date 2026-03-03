@@ -1,0 +1,8 @@
+common:
+    disable_log: false
+    args: []
+    env: {}
+    app_path: ""
+app:
+    cleanup: false
+    verbose: "1"
