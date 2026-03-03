@@ -1,22 +1,24 @@
 # XtreamGo
 
-CLI interativo para assistir listas Xtream Code (IPTV) no MPV ou VLC, com TUI navegavel no terminal.
+CLI interativo para assistir listas Xtream Code (IPTV) no MPV, VLC ou KMPlayer,
+com TUI navegavel no terminal.
 
 ## Funcionalidades
 
 - TV ao Vivo, Filmes (VOD) e Series com navegacao por categorias
 - Filtro por nome em qualquer lista (tecla /)
 - Multiplos servidores Xtream Code com troca rapida
-- Suporte a MPV e VLC (incluindo VLC portable)
+- Suporte a MPV, VLC e KMPlayer (incluindo versoes portable)
 - Hardware decoding configuravel por servidor
 - Configuracoes alteraveis dentro da TUI sem sair do programa
 - Config persistente em ~/.config/xtream-mpv/config.json
 
 ## Requisitos
 
-- Go 1.21+        https://go.dev/dl/
-- MPV             https://mpv.io/installation/
-- VLC (opcional)  https://www.videolan.org/vlc/
+- Go 1.21+              https://go.dev/dl/
+- MPV                   https://mpv.io/installation/
+- VLC (opcional)        https://www.videolan.org/vlc/
+- KMPlayer (opcional)   https://www.kmplayer.com/
 
 ## Instalacao
 
@@ -34,23 +36,36 @@ CLI interativo para assistir listas Xtream Code (IPTV) no MPV ou VLC, com TUI na
 
     # Windows: mova xtreamgo.exe para uma pasta no PATH
 
-### VLC Portable (opcional)
+### Players Portable (opcional)
 
-Coloque os arquivos do VLC portable nesta estrutura ao lado do executavel:
+Coloque os arquivos dos players portable ao lado do executavel:
 
     xtreamgo.exe
     players/
       vlc/
         vlc-portable.exe
         (demais arquivos do VLC portable)
+      kmplayer/
+        KMPlayerPortable.exe
+        (demais arquivos do KMPlayer portable)
 
-Ordem de deteccao automatica do VLC:
-  1. players/vlc/vlc-portable.exe  (relativo ao executavel)
+#### Ordem de deteccao - VLC
+
+  1. players/vlc/vlc-portable.exe       (relativo ao executavel)
   2. players/vlc/vlc.exe
-  3. players/vlc/vlc               (Linux/macOS)
+  3. players/vlc/vlc                    (Linux/macOS)
   4. vlc no PATH do sistema
   5. C:\Program Files\VideoLAN\VLC\vlc.exe
   6. /Applications/VLC.app/Contents/MacOS/VLC
+
+#### Ordem de deteccao - KMPlayer
+
+  1. players/kmplayer/KMPlayerPortable.exe   (relativo ao executavel)
+  2. players/kmplayer/KMPlayer.exe
+  3. players/kmplayer/kmplayer.exe
+  4. KMPlayer no PATH do sistema
+  5. C:\Program Files\KMPlayer\KMPlayer.exe
+  6. C:\Program Files (x86)\KMPlayer\KMPlayer.exe
 
 ## Uso
 
@@ -62,7 +77,7 @@ Ordem de deteccao automatica do VLC:
     URL (ex: http://server.com:8080): http://meuservidor.com:8080
     Usuario: meuusuario
     Senha: minhasenha
-    Player (mpv/vlc) [mpv]: mpv
+    Player (mpv/vlc/kmplayer) [mpv]: mpv
     Testando conexao... OK! meuusuario | Active | expira: 2026-12-31
     Servidor 'MeuIPTV' adicionado.
 
@@ -97,7 +112,7 @@ Ordem de deteccao automatica do VLC:
 
 Acesse pelo menu principal -> Configuracoes.
 
-    p   Player          mpv <-> vlc
+    p   Player          mpv -> vlc -> kmplayer -> mpv (ciclo)
     h   HW Decoding     no -> auto -> vaapi -> vdpau -> nvdec -> videotoolbox
     f   Fullscreen      sim <-> nao
     s   Servidor ativo  lista de servidores salvos
@@ -105,7 +120,32 @@ Acesse pelo menu principal -> Configuracoes.
 
 Cada tecla salva imediatamente no config.json.
 
+## Players
+
+### MPV (padrao recomendado)
+
+Player leve e poderoso, ideal para streams IPTV. Melhor compatibilidade
+com os parametros de correcao de GOP e cache configurados pelo XtreamGo.
+
+    https://mpv.io/installation/
+
+### VLC
+
+Amplamente compativel, boa opcao de fallback. Suporta versao portable.
+
+    https://www.videolan.org/vlc/
+    Portable: players/vlc/vlc-portable.exe
+
+### KMPlayer
+
+Player popular no Windows com interface propria. Suporta versao portable.
+
+    https://www.kmplayer.com/
+    Portable: players/kmplayer/KMPlayerPortable.exe
+
 ## Hardware Decoding
+
+Disponivel apenas no MPV. Configuravel por servidor.
 
     no             Software (padrao). Maxima compatibilidade para streams IPTV.
     auto           Detecta automaticamente.
@@ -120,19 +160,21 @@ Hardware decoding pode causar corrupcao em streams com bitrate instavel.
 ## Estrutura do projeto
 
     xtreamgo/
-    ├── main.go       entrypoint + comandos CLI
-    ├── api.go        cliente da API Xtream Codes
-    ├── config.go     configuracao e servidores
-    ├── player.go     launcher MPV e VLC
-    ├── tui.go        interface TUI (Bubbletea)
-    ├── flexjson.go   tipos flexiveis para JSON inconsistente da API
+    ├── main.go         entrypoint + comandos CLI
+    ├── api.go          cliente da API Xtream Codes
+    ├── config.go       configuracao e servidores
+    ├── player.go       launcher MPV, VLC e KMPlayer
+    ├── tui.go          interface TUI (Bubbletea)
+    ├── flexjson.go     tipos flexiveis para JSON inconsistente da API
     ├── go.mod
     ├── go.sum
     ├── README.md
     ├── LICENSE
     └── players/
-        └── vlc/
-            └── vlc-portable.exe
+        ├── vlc/
+        │   └── vlc-portable.exe
+        └── kmplayer/
+            └── KMPlayerPortable.exe
 
 ## Dependencias
 
