@@ -82,7 +82,7 @@ func newAppModel(client *Client, cfg *Config, playOpts PlayOpts) appModel {
 	l := list.New(nil, del, 80, 20)
 	l.SetFilteringEnabled(true)
 	l.Styles.Title = titleStyle
-	l.Title = "Xtream MPV"
+	l.Title = "XtreamGO"
 	l.SetItems(mainMenuItems())
 	return appModel{
 		client:   client,
@@ -184,7 +184,7 @@ func (m appModel) updateSettings(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 		return m, tea.Quit
 	case "esc", "backspace":
 		m.screen = screenMain
-		m.list.Title = "Xtream MPV"
+		m.list.Title = "XtreamGO"
 		m.list.SetItems(mainMenuItems())
 		m.status, m.errMsg = "", ""
 	// player
@@ -532,7 +532,7 @@ func (m appModel) goBack() (tea.Model, tea.Cmd) {
 		return m, tea.Quit
 	case screenLiveCats, screenVODCats, screenSeriesCats, screenSettings:
 		m.screen = screenMain
-		m.list.Title = "Xtream MPV"
+		m.list.Title = "XtreamGO"
 		m.list.SetItems(mainMenuItems())
 	case screenLiveStreams:
 		return m.navigate(screenLiveCats, "TV ao Vivo > Categorias", func() tea.Msg {
