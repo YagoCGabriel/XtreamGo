@@ -19,18 +19,18 @@ func main() {
         cmdList()
     case "use":
         if len(args) < 2 {
-            fmt.Fprintln(os.Stderr, "Uso: xtream-mpv use <index>")
+            fmt.Fprintln(os.Stderr, "Uso: xtreamgo use <index>")
             os.Exit(1)
         }
         cmdUse(args[1])
     case "remove":
         if len(args) < 2 {
-            fmt.Fprintln(os.Stderr, "Uso: xtream-mpv remove <index>")
+            fmt.Fprintln(os.Stderr, "Uso: xtreamgo remove <index>")
             os.Exit(1)
         }
         cmdRemove(args[1])
     default:
-        fmt.Println("Uso: xtream-mpv [add|list|use <n>|remove <n>]")
+        fmt.Println("Uso: xtreamgo [add|list|use <n>|remove <n>]")
     }
 }
 
