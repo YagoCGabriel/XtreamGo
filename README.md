@@ -224,7 +224,7 @@ Hardware decoding pode causar corrupcao em streams com bitrate instavel.
 
 ## Config JSON
 
-Salvo em ~/.config/xtream-mpv/config.json:
+Salvo em /xtreamgo/config.json:
 
     {
       "servers": [
