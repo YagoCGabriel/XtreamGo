@@ -33,7 +33,7 @@ com TUI navegavel no terminal.
     git clone https://github.com/user/xtreamgo.git
     cd xtreamgo
     go mod tidy
-    go build -o xtreamgo .
+    go build -o xtreamgo.exe .
 
 ### Instalar globalmente (opcional)
 
