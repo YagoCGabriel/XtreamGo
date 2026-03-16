@@ -1,23 +1,31 @@
 # XtreamGo
 
-CLI interativo para assistir listas Xtream Code (IPTV) no MPV, VLC ou KMPlayer,
-com TUI navegavel no terminal.
+> Cliente IPTV para listas Xtream Code no terminal. Assiste TV ao Vivo, Filmes e Series
+> com uma TUI split-panel no MPV, VLC ou KMPlayer.
 
-<img width="952" height="552" alt="image" src="https://github.com/user-attachments/assets/5a4ccebb-b304-4fcc-84ee-fa4a698b2bd3" />
+<img width="952" height="552" alt="Interface" src="https://github.com/user-attachments/assets/923fb96d-f09e-45fe-9f26-27af12be9d0f" />
 
+
+---
 
 ## Funcionalidades
 
+- Layout split com painel de detalhes ao lado da lista (toggle com Tab)
 - TV ao Vivo, Filmes (VOD) e Series com navegacao por categorias
-- Busca global em todos os Filmes ou Series de uma vez (sem escolher categoria)
-- Filtro por nome em qualquer lista (tecla /)
-- Breadcrumb de navegacao sempre visivel
-- Spinner animado durante carregamentos
+- Busca global em todos os Filmes ou Series sem precisar escolher categoria
+- Filtro fuzzy por nome em qualquer lista (tecla /)
+- Episodios marcados com estrela (automatico ao reproduzir, ou manual com W)
+- Progress bar de temporada: quantos episodios ja foram assistidos
+- Proximos episodios nao assistidos exibidos no painel de detalhes
+- Interface em portugues (pt-BR) ou ingles (en-US), alternavel com tecla L
+- Header adaptativo: trunca informacoes conforme a largura do terminal
 - Multiplos servidores Xtream Code com troca rapida
 - Suporte a MPV, VLC e KMPlayer (incluindo versoes portable)
-- Hardware decoding configuravel por servidor
-- Configuracoes alteraveis dentro da TUI sem sair do programa
-- Config persistente em ~/.config/xtream-mpv/config.json
+- Hardware decoding configuravel por servidor (vaapi, nvdec, videotoolbox...)
+- Configuracoes salvas imediatamente no config.json
+- Historico de episodios assistidos salvo em watched.json
+
+---
 
 ## Requisitos
 
@@ -26,14 +34,29 @@ com TUI navegavel no terminal.
 - VLC (opcional)        https://www.videolan.org/vlc/
 - KMPlayer (opcional)   https://www.kmplayer.com/
 
+---
+
 ## Instalacao
 
-### Compilar
+### Baixar binario pre-compilado (recomendado)
+
+Acesse a pagina de releases e baixe o executavel para o seu sistema:
+
+    https://github.com/user/xtreamgo/releases
+
+Plataformas disponíveis:
+
+    xtreamgo-windows-amd64.exe
+    xtreamgo-linux-amd64
+    xtreamgo-darwin-amd64
+    xtreamgo-darwin-arm64
+
+### Compilar a partir do codigo-fonte
 
     git clone https://github.com/user/xtreamgo.git
     cd xtreamgo
     go mod tidy
-    go build -o xtreamgo.exe .
+    go build -o xtreamgo .
 
 ### Instalar globalmente (opcional)
 
@@ -73,19 +96,21 @@ Coloque os arquivos dos players portable ao lado do executavel:
   5. C:\Program Files\KMPlayer\KMPlayer.exe
   6. C:\Program Files (x86)\KMPlayer\KMPlayer.exe
 
+---
+
 ## Uso
 
 ### Adicionar servidor
 
     xtreamgo add
 
-    Nome (ex: MeuIPTV): MeuIPTV
-    URL (ex: http://server.com:8080): http://meuservidor.com:8080
-    Usuario: meuusuario
-    Senha: minhasenha
+    Name / Nome: MeuIPTV
+    URL: http://meuservidor.com:8080
+    Username / Usuario: meuusuario
+    Password / Senha: minhasenha
     Player (mpv/vlc/kmplayer) [mpv]: mpv
-    Testando conexao... OK! meuusuario | Active | expira: 2026-12-31
-    Servidor 'MeuIPTV' adicionado.
+    Testing connection... OK! meuusuario | Active | expires: 2026-12-31
+    Server 'MeuIPTV' added (player: mpv).
 
 ### Abrir a TUI
 
@@ -93,79 +118,105 @@ Coloque os arquivos dos players portable ao lado do executavel:
 
 ### Outros comandos
 
-    xtreamgo list         listar servidores (* = ativo)
+    xtreamgo list         listar servidores (* = ativo) e idioma atual
     xtreamgo use 1        ativar servidor pelo indice
     xtreamgo remove 0     remover servidor pelo indice
 
-## Interface
+---
 
-A TUI conta com:
+## Interface (TUI)
 
-- Header fixo com logo, versao e servidor/player ativo
-- Breadcrumb de navegacao com separador › e item atual em ciano
-- Spinner animado durante carregamentos
-- Item selecionado com borda esquerda roxa e fundo destacado
-- Footer dinamico que muda os atalhos conforme a tela atual
+Acima de 110 colunas de largura, a interface usa um layout split:
 
-## Navegacao na TUI
+    ┌─────────────────────────────────────────────────────────────────────┐
+    │  XtreamGo v1.0                         MeuIPTV  ·  mpv  ·  pt-BR   │
+    ├─────────────────────────────────────────────────────────────────────┤
+    │  Home › Séries › Drama › Dark                         tab ⊠        │
+    ├───────────────────────────────────────┬─────────────────────────────┤
+    │                                       │                             │
+    │    Season 1        8 ep. ★ 5/8        │  Temporada 1               │
+    │  ▸ Season 2        10 ep. ★ 2/10      │  ────────────────          │
+    │    Season 3        8 ep.              │  Episodios  10             │
+    │                                       │  Assistidos  2 / 10        │
+    │                                       │                             │
+    │                                       │  ████████░░░░░░░░░░░░  20% │
+    │                                       │                             │
+    │                                       │  Proximos nao assistidos:  │
+    │                                       │    E03  Adam und Eva        │
+    ├───────────────────────────────────────┴─────────────────────────────┤
+    │  enter selecionar  ·  esc voltar  ·  / filtrar  ·  q sair          │
+    └─────────────────────────────────────────────────────────────────────┘
+
+Abaixo de 110 colunas a lista ocupa a tela inteira.
+
+### Teclas globais
 
     Setas / Enter   Navegar e selecionar
     Esc             Voltar
-    /               Filtrar por nome na lista atual
+    /               Filtrar por nome
+    Tab             Mostrar / ocultar painel de detalhes
     q               Sair
 
-### Fluxo
+### Teclas na tela de episodios
 
-    Menu principal
-     TV ao Vivo  ->  Categorias               ->  Canais      ->  Player
-     Filmes      ->  [Buscar em tudo]          ->  Todos       ->  Player
-                  ->  Categoria                ->  Filmes      ->  Player
-     Series      ->  [Buscar em tudo]          ->  Todas       ->  Player
-                  ->  Categoria  ->  Series
-                                  ->  Temporadas
-                                  ->  Episodios ->  Player
-     Configuracoes
+    Enter           Reproduzir e marcar como assistido automaticamente
+    W               Marcar / desmarcar manualmente como assistido
 
-### Busca global em Filmes e Series
+### Teclas nas Configuracoes
 
-Nas telas de categorias de Filmes e Series, o primeiro item da lista e sempre
-"Buscar em tudo". Ao seleciona-lo, o XtreamGo carrega todos os itens de todas
-as categorias de uma vez e abre a lista com o filtro ativo. Use / para digitar
-e encontrar qualquer titulo independente da categoria.
-
-    Filmes
-     󰍉  Buscar em tudo   <- carrega TODOS os filmes, use / para filtrar
-     ──────────────────
-     Acao
-     Comedia
-     Drama
-     ...
-
-    Series
-     󰍉  Buscar em tudo   <- carrega TODAS as series, use / para filtrar
-     ──────────────────
-     Animacao
-     Drama
-     ...
-
-## Tela de Configuracoes
-
-Acesse pelo menu principal -> Configuracoes.
-
-    p   Player          mpv -> vlc -> kmplayer -> mpv (ciclo)
-    h   HW Decoding     no -> auto -> vaapi -> vdpau -> nvdec -> videotoolbox
+    p   Player          ciclo: mpv -> vlc -> kmplayer
+    h   HW Decoding     ciclo: no -> auto -> vaapi -> vdpau -> nvdec -> videotoolbox
     f   Fullscreen      sim <-> nao
-    s   Servidor ativo  lista de servidores salvos
+    l   Idioma          pt-BR <-> en-US
+    s   Servidor        lista de servidores para trocar
     Esc Voltar
 
-Cada tecla salva imediatamente no config.json.
+Cada tecla salva imediatamente.
+
+### Busca global
+
+Nas telas de Filmes e Series o primeiro item e sempre "Buscar em tudo".
+Ao seleciona-lo, todos os itens de todas as categorias sao carregados.
+Use / para filtrar por nome em toda a base.
+
+---
+
+## Episodios Assistidos
+
+O XtreamGo marca automaticamente um episodio como assistido ao reproduzi-lo.
+Use W para marcar ou desmarcar manualmente sem reproduzir.
+
+O estado e salvo em:
+
+    Windows:   %APPDATA%\xtream-mpv\watched.json
+    Linux:     ~/.config/xtream-mpv/watched.json
+    macOS:     ~/Library/Application Support/xtream-mpv/watched.json
+
+Na tela de temporadas a desc mostra quantos episodios foram assistidos:
+
+    Season 1   8 ep.  ★ 8/8    <- temporada concluida
+    Season 2   10 ep. ★ 3/10   <- em andamento
+    Season 3   6 ep.            <- nao iniciada
+
+---
+
+## Idioma
+
+O idioma padrao e pt-BR. Para alternar vá em Configuracoes e pressione L.
+A mudanca e imediata e persistente. Toda a interface muda: menus, labels,
+breadcrumbs, badges e teclas do footer.
+
+    pt-BR   Portugues brasileiro (padrao)
+    en-US   English
+
+---
 
 ## Players
 
 ### MPV (padrao recomendado)
 
-Player leve e poderoso, ideal para streams IPTV. Melhor compatibilidade
-com os parametros de correcao de GOP e cache configurados pelo XtreamGo.
+Player leve e poderoso, ideal para streams IPTV. O XtreamGo configura
+automaticamente flags de cache, correcao de GOP e tolerancia a erros.
 
     https://mpv.io/installation/
 
@@ -183,19 +234,21 @@ Player popular no Windows com interface propria. Suporta versao portable.
     https://www.kmplayer.com/
     Portable: players/kmplayer/KMPlayerPortable.exe
 
-## Hardware Decoding
+---
 
-Disponivel apenas no MPV. Configuravel por servidor.
+## Hardware Decoding (MPV)
 
     no             Software (padrao). Maxima compatibilidade para streams IPTV.
     auto           Detecta automaticamente.
     vaapi          Intel/AMD no Linux.
     vdpau          NVIDIA no Linux (legado).
     nvdec          NVIDIA moderno (RTX/GTX recentes).
-    videotoolbox   macOS.
+    videotoolbox   macOS (qualquer Mac).
 
-Dica: se aparecerem artefatos ou blocos na imagem, use "no" (software).
+Dica: se aparecerem artefatos ou blocos na imagem, use "no".
 Hardware decoding pode causar corrupcao em streams com bitrate instavel.
+
+---
 
 ## Estrutura do projeto
 
@@ -204,7 +257,9 @@ Hardware decoding pode causar corrupcao em streams com bitrate instavel.
     ├── api.go          cliente da API Xtream Codes
     ├── config.go       configuracao e servidores
     ├── player.go       launcher MPV, VLC e KMPlayer
-    ├── tui.go          interface TUI (Bubbletea)
+    ├── tui.go          interface TUI com layout split
+    ├── i18n.go         strings pt-BR e en-US
+    ├── watched.go      historico de episodios assistidos
     ├── flexjson.go     tipos flexiveis para JSON inconsistente da API
     ├── go.mod
     ├── go.sum
@@ -216,15 +271,18 @@ Hardware decoding pode causar corrupcao em streams com bitrate instavel.
         └── kmplayer/
             └── KMPlayerPortable.exe
 
-## Dependencias
+---
 
-    github.com/charmbracelet/bubbletea   Framework da TUI
-    github.com/charmbracelet/bubbles     Componente de lista com filtro
-    github.com/charmbracelet/lipgloss    Estilos e cores no terminal
+## Arquivos de configuracao
 
-## Config JSON
+    Windows   %APPDATA%\xtream-mpv\
+    Linux     ~/.config/xtream-mpv/
+    macOS     ~/Library/Application Support/xtream-mpv/
 
-Salvo em /xtreamgo/config.json:
+    config.json    servidores, player, idioma, fullscreen, hwdec
+    watched.json   historico de episodios assistidos
+
+### config.json
 
     {
       "servers": [
@@ -238,8 +296,19 @@ Salvo em /xtreamgo/config.json:
           "fullscreen": false
         }
       ],
-      "current": 0
+      "current": 0,
+      "language": "pt-BR"
     }
+
+---
+
+## Dependencias
+
+    github.com/charmbracelet/bubbletea   Framework da TUI
+    github.com/charmbracelet/bubbles     Lista com filtro e spinner
+    github.com/charmbracelet/lipgloss    Estilos e cores no terminal
+
+---
 
 ## Licenca
 
