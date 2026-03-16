@@ -3,8 +3,7 @@
 > Cliente IPTV para listas Xtream Code no terminal. Assiste TV ao Vivo, Filmes e Series
 > com uma TUI split-panel no MPV, VLC ou KMPlayer.
 
-<img width="952" height="552" alt="Interface" src="https://github.com/user-attachments/assets/923fb96d-f09e-45fe-9f26-27af12be9d0f" />
-
+<img width="952" height="552" alt="Interface" src="https://github.com/user-attachments/assets/c50b49f6-50e1-4aae-9a35-adf67cba7a20" />
 
 ---
 
@@ -307,6 +306,27 @@ Hardware decoding pode causar corrupcao em streams com bitrate instavel.
     github.com/charmbracelet/bubbletea   Framework da TUI
     github.com/charmbracelet/bubbles     Lista com filtro e spinner
     github.com/charmbracelet/lipgloss    Estilos e cores no terminal
+
+---
+
+## Aviso Legal / Disclaimer
+
+XtreamGo e um cliente de linha de comando que se conecta a servidores
+Xtream Codes configurados e fornecidos pelo proprio usuario.
+
+NOS NAO:
+- Fornecemos, vendemos ou distribuimos qualquer servico de IPTV
+- Hospedamos, armazenamos ou transmitimos qualquer conteudo de midia
+- Temos afiliacao com qualquer provedor de IPTV
+- Nos responsabilizamos pelo conteudo acessado atraves do programa
+
+O USUARIO E INTEIRAMENTE RESPONSAVEL por:
+- Garantir que possui autorizacao legal para acessar o conteudo
+- Verificar se o uso do servico IPTV contratado e legal em sua regiao
+- Qualquer violacao de direitos autorais ou termos de servico de terceiros
+
+Este software e fornecido apenas como ferramenta tecnica de acesso.
+O uso inadequado e de total responsabilidade do usuario.
 
 ---
 
