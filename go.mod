@@ -1,4 +1,4 @@
-module github.com/user/xtream-mpv
+module github.com/YagoCGabriel/XtreamGo
 
 go 1.21
 
